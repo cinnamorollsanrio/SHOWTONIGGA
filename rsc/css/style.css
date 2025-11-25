@@ -1,0 +1,189 @@
+/* GENERAL */
+body {
+    font-family: 'JJK-logo', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main { 
+    flex: 1 0 auto; 
+}
+
+a { 
+    text-decoration: none; 
+    color: #fff; 
+}
+
+h1, h2, h3, h4, h6 { 
+    font-weight: 700; 
+    margin-top: 0%;
+    font-style: JJK-logo, serif;
+}
+
+/* CARDS */
+.card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover { 
+    transform: scale(1.05); 
+}
+
+.card-body { 
+    display: flex; 
+    flex-direction: column; 
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 15px;
+    position: relative;
+    z-index: 2;
+    background-color: #0a0a0a;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #d33939;
+}
+
+/* HERO VIDEO */
+.hero-video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#heroVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    color: #fff;
+    z-index: 1;
+}
+
+.hero-overlay h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #d33939;
+}
+
+.hero-overlay p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin-top: 1rem;
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(180deg, #0a0a0a 0%, #1c1c1c 100%);
+    color: #fff;
+    flex-shrink: 0;
+    padding: 30px 15px;
+}
+
+footer a { 
+    color: #fff; 
+    text-decoration: none; 
+    margin-right: 8px;
+}
+
+/* FLOATING MODAL */
+#floatingModal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1050;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#floatingModal img {
+    max-width: 40vw;
+    max-height: 70vh;
+    border-radius: 10px;
+}
+
+.protagonists-section {
+  margin-top: auto; 
+  margin-bottom: 0;
+}
+
+.protagonists-section h2 {
+  margin-bottom: 40px; 
+}
+@font-face {
+  font-family: 'JJK‑Logo';
+  src: url('media/fonts/JujutsuKaisenFont.woff2') format('woff2'),
+       url('media/fonts/JujutsuKaisenFont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.jk-title {
+  font-family: 'JJK‑Logo', serif;
+  color: #d33939; /* your red color */
+  font-weight: 800;
+}
+
+.protagonist-name {
+    font-weight: 1000;   
+    color: #d33939;
+}
+
+.antagonist-name {
+    font-weight: 1000;   
+    color: #d33939
+}
+
+.figurine {
+    font-weight: 1000;   
+    color: #d33939;
+}
+
+.Merchandise-section {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.Merchandise-section h2 {
+  margin-bottom: 40px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;   /* adjust number if you want taller/shorter */
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+}
+
